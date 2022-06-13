@@ -1,0 +1,1 @@
+Browser version of sketchpad / etch-a-sketch created with The Odin Project. Practicing DOM manipulation skills.
