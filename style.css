@@ -5,26 +5,27 @@ body {
 }
 
 .square {
-    border: 0px solid black;
     display: flex;
     gap: 0;
     margin: 0;
     padding: 0;
-    width: 60px;
-    height: 60px;
-    flex: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 45px;
     align-items: center;
     justify-content: center;
 }
 
 .grid {
     display: flex;
-    height: 960px;
-    width: 960px;
+    height: 720px;
+    width: 720px;
     flex-wrap: wrap;
     border: 1px solid blue;
-    gap: 0;
-    margin: 0;
-    padding: 0;
+    flex-shrink: 0;
+}
+
+.hover {
+    background-color: black;
 }
 
