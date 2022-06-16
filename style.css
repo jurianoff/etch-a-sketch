@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    border: 0px solid black;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    height: 960px;
+    width: 960px;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
