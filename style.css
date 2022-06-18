@@ -1,7 +1,9 @@
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 72px;
 }
 
 .square {
@@ -29,3 +31,10 @@ body {
     background-color: black;
 }
 
+.buttons {
+    height: 50px;
+}
+
+.blackMode {
+    background-color: black;
+}
