@@ -78,3 +78,23 @@ rainbowMode.addEventListener('click', () => {
         squaresToStyle[i].style.flexBasis = `${720/gridSize}px`;
     };
 });
+
+const rainbowToBlackMode = document.querySelector('.rainbowToBlack');
+rainbowToBlackMode.addEventListener('click', () => {
+    clear();
+    for (let i = 1; i <= gridSize*gridSize; i++) {
+        const square = document.createElement('div');
+        square.classList.add('square');
+        grid.appendChild(square);
+        let h = Math.floor((Math.random() * 360) + 1);
+        let s = 100;
+        let l = 50;
+        square.addEventListener('mouseover', () => {
+            square.style.backgroundColor = `hsl(${h}, ${s}%, ${l}%)`;
+            l = l-5;
+        })}
+    let squaresToStyle = document.getElementsByClassName('square');
+    for (let i = 0; i < squaresToStyle.length; i++) {
+        squaresToStyle[i].style.flexBasis = `${720/gridSize}px`;
+    };
+});
