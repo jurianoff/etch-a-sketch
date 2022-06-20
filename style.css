@@ -3,7 +3,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 72px;
+    font-family: "Lucida Console", monospace;
+    background-color: rgb(220, 241, 179);
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+    text-shadow: 5px 5px 11px rgb(80, 82, 70);
 }
 
 .square {
@@ -23,7 +27,7 @@ body {
     height: 720px;
     width: 720px;
     flex-wrap: wrap;
-    border: 1px solid blue;
+    border: 2px solid rgb(0, 0, 0);
     flex-shrink: 0;
 }
 
@@ -31,8 +35,26 @@ body {
     background-color: black;
 }
 
+button {
+    font-family: "Lucida Console", monospace;
+    background-color: rgb(40, 58, 58);
+    color:bisque;
+    width: 190px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: rgb(71, 78, 78);;
+}
+
 .buttons {
     height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:50px;
+    margin-bottom: 30px;
 }
 
 .blackMode {
